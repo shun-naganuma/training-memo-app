@@ -2,13 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import * as color from './color'
 import { CheckIcon as _CheckIcon, TrashIcon } from './icon'
+import { Exercise } from './Exercise'
 
-export function Card({ text }: { text?: string }) {
+export function Card({ exercise_name }: { exercise_name?: string }) {
   return (
     <Container>
       <CheckIcon />
-
-      {text?.split(/(https?:\/\/\S+)/g).map((fragment, i) =>
+      <Exercise />
+      {exercise_name?.split(/(https?:\/\/\S+)/g).map((fragment, i) =>
         i % 2 === 0 ? (
           <Text key={i}>{fragment}</Text>
         ) : (

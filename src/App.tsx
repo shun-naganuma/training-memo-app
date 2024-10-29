@@ -11,11 +11,11 @@ export function App() {
       <MainArea>
         <HorizontalScroll>
           <Column
-            title="TODO"
+            date="2024/10/30"
             cards={[
-              { id: 'a', text: '朝食をとる🍞' },
-              { id: 'b', text: 'SNSをチェックする🐦' },
-              { id: 'c', text: '布団に入る (:3[___]' },
+              { id: 'a', exercise_name: 'ベンチプレス' },
+              { id: 'b', exercise_name: 'スクワット' },
+              { id: 'c', exercise_name: 'デッドリフト' },
             ]}
           />
         </HorizontalScroll>

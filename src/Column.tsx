@@ -5,10 +5,10 @@ import { Card } from './Card'
 import { PlusIcon } from './icon'
 
 export function Column({
-  title,
+  date,
   cards,
 }: {
-  title?: string
+  date?: string
   cards: {
     id: string
     text?: string
@@ -20,14 +20,14 @@ export function Column({
     <Container>
       <Header>
         <CountBadge>{totalCount}</CountBadge>
-        <ColumnName>{title}</ColumnName>
+        <ColumnName>{date}</ColumnName>
 
         <AddButton />
       </Header>
 
       <VerticalScroll>
-        {cards.map(({ id, text }) => (
-          <Card key={id} text={text} />
+        {cards.map(({ id, exercise_name }) => (
+          <Card key={id} exercise_name={exercise_name} />
         ))}
       </VerticalScroll>
     </Container>
@@ -37,7 +37,7 @@ export function Column({
 const Container = styled.div`
   display: flex;
   flex-flow: column;
-  width: 355px;
+  width: 100%;
   height: 100%;
   border: solid 1px ${color.Silver};
   border-radius: 6px;

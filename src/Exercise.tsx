@@ -1,14 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 import * as color from './color'
-import { CardFilter } from './CardFilter'
 
-export function Header({ className }: { className?: string }) {
+export function Exercise() {
   return (
-    <Container className={className}>
-      <Logo>Trainning Memo</Logo>
-
-      <CardFilter />
+    <Container>
+      <ExerciseName>ベンチプレス</ExerciseName>
     </Container>
   )
 }
@@ -18,11 +15,11 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  background-color: ${color.Navy};
+  background-color: ${color.Silver};
 `
 
-const Logo = styled.div`
-  color: ${color.Silver};
+const ExerciseName = styled.div`
+  color: ${color.Black};
   font-size: 16px;
   font-weight: bold;
 `
