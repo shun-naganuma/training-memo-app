@@ -18,18 +18,6 @@ export function App() {
               { id: 'c', text: '布団に入る (:3[___]' },
             ]}
           />
-          <Column
-            title="Doing"
-            cards={[
-              { id: 'd', text: '顔を洗う👐' },
-              { id: 'e', text: '歯を磨く🦷' },
-            ]}
-          />
-          <Column title="Waiting" cards={[]} />
-          <Column
-            title="Done"
-            cards={[{ id: 'f', text: '布団から出る (:3っ)っ -=三[＿＿]' }]}
-          />
         </HorizontalScroll>
       </MainArea>
     </Container>
