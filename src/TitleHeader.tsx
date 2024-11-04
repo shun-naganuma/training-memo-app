@@ -5,7 +5,7 @@ import * as color from './color'
 export function TitleHeader({ className }: { className?: string }) {
   return (
     <Container className={className}>
-      <AppTitle>トレーニングメモ</AppTitle>
+      <AppTitle>Training memo</AppTitle>
     </Container>
   )
 }
@@ -15,11 +15,12 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 8px 16px;
-  background-color: ${color.Navy};
+  background-color: ${color.Olive};
 `
 
 const AppTitle = styled.div`
-  color: ${color.Silver};
-  font-size: 16px;
+  color: ${color.LightSilver};
+  font-size: 32px;
   font-weight: bold;
+  font-family: 'Roboto';
 `
