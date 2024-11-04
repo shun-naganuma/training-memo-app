@@ -1,0 +1,30 @@
+{
+  "columns": [
+    {
+      "id": "cXrtw5n8-FsB",
+      "title": "今日の予定"
+    },
+    {
+      "id": "w7DTqK1QQKTI",
+      "title": "実施済み"
+    }
+  ],
+  "cards": [
+    {
+      "id": "bh1RTL7LZ50o",
+      "text": "ベンチプレス\n重量：80kg"
+    },
+    {
+      "id": "rb1pY9LBBkus",
+      "text": "スクワット\n重量：120kg\n回数：５回"
+    }
+  ],
+  "cardsOrder": {
+    "cXrtw5n8-FsB": "bh1RTL7LZ50o",
+    "w7DTqK1QQKTI": "rb1pY9LBBkus",
+    "bfrqTfEydU38": "bfrqTfEydU38",
+    "dfwMbxZS0EmM": "dfwMbxZS0EmM",
+    "bh1RTL7LZ50o": "cXrtw5n8-FsB",
+    "rb1pY9LBBkus": "w7DTqK1QQKTI"
+  }
+}
