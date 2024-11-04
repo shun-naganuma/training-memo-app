@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import produce from 'immer'
 import { randomID, sortBy, reorderPatch } from './util'
 import { api, ColumnID, CardID } from './api'
+
+import { TitleHeader as _TitleHeader } from './TitleHeader'
+
 import { Header as _Header } from './Header'
 import { Column } from './Column'
 import { DeleteDialog } from './DeleteDialog'
@@ -27,26 +30,30 @@ export function App() {
 
   useEffect(() => {
     ;(async () => {
-      const columns = await api('GET /v1/columns', null)
+      try {
+        const columns = await api('GET /v1/columns', null)
 
-      setData(
-        produce((draft: State) => {
-          draft.columns = columns
-        }),
-      )
+        setData(
+          produce((draft: State) => {
+            draft.columns = columns
+          }),
+        )
 
-      const [unorderedCards, cardsOrder] = await Promise.all([
-        api('GET /v1/cards', null),
-        api('GET /v1/cardsOrder', null),
-      ])
-      setData(
-        produce((draft: State) => {
-          draft.cardsOrder = cardsOrder
-          draft.columns?.forEach(column => {
-            column.cards = sortBy(unorderedCards, cardsOrder, column.id)
-          })
-        }),
-      )
+        const [unorderedCards, cardsOrder] = await Promise.all([
+          api('GET /v1/cards', null),
+          api('GET /v1/cardsOrder', null),
+        ])
+        setData(
+          produce((draft: State) => {
+            draft.cardsOrder = cardsOrder
+            draft.columns?.forEach(column => {
+              column.cards = sortBy(unorderedCards, cardsOrder, column.id)
+            })
+          }),
+        )
+      } catch {
+        console.error('API Error:', error) // エラーをログに出力
+      }
     })()
   }, [])
 
@@ -162,6 +169,7 @@ export function App() {
 
   return (
     <Container>
+      <TitleHeader />
       <Header filterValue={filterValue} onFilterChange={setFilterValue} />
 
       <MainArea>
@@ -203,6 +211,10 @@ const Container = styled.div`
   display: flex;
   flex-flow: column;
   height: 100%;
+`
+
+const TitleHeader = styled(_TitleHeader)`
+  flex-shrink: 0;
 `
 
 const Header = styled(_Header)`
