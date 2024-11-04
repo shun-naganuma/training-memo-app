@@ -2,69 +2,29 @@
   "columns": [
     {
       "id": "cXrtw5n8-FsB",
-      "title": "TODO"
+      "title": "今日の予定"
     },
     {
       "id": "w7DTqK1QQKTI",
-      "title": "Doing"
-    },
-    {
-      "id": "bfrqTfEydU38",
-      "title": "Waiting"
-    },
-    {
-      "id": "dfwMbxZS0EmM",
-      "title": "Done"
+      "title": "実施済み"
     }
   ],
   "cards": [
     {
-      "id": "7lR4Vd3EYixP",
-      "text": "布団から出る\n(:3っ)っ -=三[＿＿]"
+      "id": "bh1RTL7LZ50o",
+      "text": "ベンチプレス\n重量：80kg"
     },
     {
-      "id": "TsXP5w9qLeM-",
-      "text": "顔を洗う👐"
-    },
-    {
-      "id": "rh022hj9zG58",
-      "text": "歯を磨く🦷"
-    },
-    {
-      "id": "3NRSLMq49xvT",
-      "text": "朝食をとる🍞"
-    },
-    {
-      "id": "ulnuLLt5TN93",
-      "text": "SNSをチェックする🐦"
-    },
-    {
-      "id": "-wkumDeruhSx",
-      "text": "布団に入る\n(:3[___]"
-    },
-    {
-      "id": "l680NFp4klRh",
-      "text": "aaaa"
-    },
-    {
-      "id": "CoH9gnJqJwiG",
-      "text": "筋トレ"
-    },
-    {
-      "id": "m2CJDTLGiKy_",
-      "text": "失敗"
+      "id": "rb1pY9LBBkus",
+      "text": "スクワット\n重量：120kg\n回数：５回"
     }
   ],
   "cardsOrder": {
-    "cXrtw5n8-FsB": "ulnuLLt5TN93",
-    "w7DTqK1QQKTI": "TsXP5w9qLeM-",
+    "cXrtw5n8-FsB": "bh1RTL7LZ50o",
+    "w7DTqK1QQKTI": "rb1pY9LBBkus",
     "bfrqTfEydU38": "bfrqTfEydU38",
-    "dfwMbxZS0EmM": "7lR4Vd3EYixP",
-    "7lR4Vd3EYixP": "dfwMbxZS0EmM",
-    "TsXP5w9qLeM-": "rh022hj9zG58",
-    "rh022hj9zG58": "w7DTqK1QQKTI",
-    "3NRSLMq49xvT": "-wkumDeruhSx",
-    "ulnuLLt5TN93": "3NRSLMq49xvT",
-    "-wkumDeruhSx": "cXrtw5n8-FsB"
+    "dfwMbxZS0EmM": "dfwMbxZS0EmM",
+    "bh1RTL7LZ50o": "cXrtw5n8-FsB",
+    "rb1pY9LBBkus": "w7DTqK1QQKTI"
   }
 }

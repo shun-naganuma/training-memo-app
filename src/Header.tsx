@@ -12,10 +12,19 @@ export function Header({
   onFilterChange?(value: string): void
   className?: string
 }) {
+  // 現在の日付を取得し、フォーマットする関数
+  const getCurrentDate = () => {
+    const currentDate = new Date()
+    const year = currentDate.getFullYear()
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0')
+    const day = String(currentDate.getDate()).padStart(2, '0')
+
+    return `${year}年${month}月${day}日` // YYYY-MM-DD 形式
+  }
+
   return (
     <Container className={className}>
-      <Logo>Kanban board</Logo>
-
+      <Logo>{getCurrentDate()}</Logo> {/* 現在の日付を表示に変更 */}
       <CardFilter value={filterValue} onChange={onFilterChange} />
     </Container>
   )
